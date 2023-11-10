@@ -1,0 +1,2289 @@
+<!doctype html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="dns-prefetch" href="https://wd-smart.myharavan.com/" />
+    <link rel="dns-prefetch" href="//file.hstatic.net/" />
+    <link rel="shortcut icon" type="image/x-icon"  th:href="@{images/favicon.png}">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="revisit-after" content="1 day" />
+    <title>Spring Mobile</title>
+    <meta name="description" content="Spring Mobile - Điện Thoại Si&#234;u Rẻ, Trao Trọn Y&#234;n T&#226;m." />
+    <link rel="canonical" href="https://wd-smart.myharavan.com/" />
+    <meta name="robots" content="index,follow,noodp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Spring Mobile" />
+    <meta property="og:image" content="http:" />
+    <meta property="og:image" content="https:" />
+    <meta property="og:image:secure_url" content="https:" />
+    <meta property="og:image:secure_url" content="http:" />
+    <meta property="og:description" content="Spring Mobile - Điện Thoại Si&#234;u Rẻ, Trao Trọn Y&#234;n T&#226;m." />
+    <meta property="og:image:alt" content="Spring Mobile" />
+    <meta property="og:url" content="https://wd-smart.myharavan.com/" />
+    <meta property="og:site_name" content="Spring Mobile" />
+    <link rel="preload" as="image"
+        href="https://file.hstatic.net/200000713019/file/logo-wd-while_fc8ab801a468414da5fff56a005c96cb.png"
+        type="image/png" />
+    <style>
+        :root {
+            --bgheader: #1877f2;
+            --color_header: #ffffff;
+            --color_menu: #000000;
+            --bgshop: #000000;
+            --bg_button: #1877f2;
+            --color_button: #ffffff;
+            --colorshop: #000000;
+            --colorshophover: #288ad6;
+            --bgfooter: #202020;
+            --colorfooter: #ffffff;
+            --colorbgmenumb: #111111;
+            --colortextmenumb: #ffffff;
+            --bgflashsale: #1877f2;
+            --bg_button_add_to_cart: #e90707;
+            --bgprefooter: #202020;
+            --height-head: 60px;
+            --imgselect: url(https://file.hstatic.net/200000525917/file/ico-select_c577a364ec074c9b9cd07a446e6a1a2c.svg);
+            --imgsort: url(https://file.hstatic.net/200000525917/file/sort-az_ce83a7d22f214b68bc6aa586b6ac3d34.svg);
+            --bg-filter: url("https://file.hstatic.net/200000525917/file/filter_415f49821dc841d3add47c3d0abed6b8.svg");
+            --typeimageproduct: contain;
+            --bgsubcribe: url("https://file.hstatic.net/200000713019/file/one-14-pro-166184670586013738040_199db9dbd4654e5d9fe60557f046fc41.webp");
+            --iframe_1: url("https://file.hstatic.net/200000525917/file/frame-1_d8cc58cf506b4f519c2fa6967fcf6dfa.png");
+            --iframe_2: url("https://file.hstatic.net/200000525917/file/frame-1_d8cc58cf506b4f519c2fa6967fcf6dfa.png");
+            --nav-height: 344px;
+            --col-menu: 3;
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=fallback"
+        as="style" type="text/css" rel="preload stylesheet" />
+    <link href="//theme.hstatic.net/200000713019/1001049223/14/plugin-style.css?v=1496" rel="preload stylesheet"
+        as="style" type="text/css" />
+    <link href="//theme.hstatic.net/200000713019/1001049223/14/styles-new.scss.css?v=1496" rel="preload stylesheet"
+        as="style" type="text/css" />
+    <link rel="preload" as="image" type="image/jpg"
+        href="//file.hstatic.net/200000525917/file/slider-1-mobile_c31dda4cb9b74b658479583882bb3244_grande.jpg"
+        media="(max-width: 480px)" />
+    <link href="//theme.hstatic.net/200000713019/1001049223/14/styles-index.scss.css?v=1496" rel="preload stylesheet"
+        as="style" type="text/css" />
+    <link href="https://file.hstatic.net/200000525917/file/jquery-script_a06dbb9a942a4a2c8e459410c8a19bc1.js"
+        rel="preload prefetch" as="script" type="text/javascript" />
+    <script type="text/javascript"
+        src="https://file.hstatic.net/200000525917/file/jquery-script_a06dbb9a942a4a2c8e459410c8a19bc1.js"></script>
+    <!-- Tất cả biến khởi tạo, check sử dụng-->
+    <script>
+        var _0x4ad6 = [
+            "\x43\x68\x72\x6F\x6D\x65",
+            "\x69\x6E\x64\x65\x78\x4F\x66",
+            "\x75\x73\x65\x72\x41\x67\x65\x6E\x74",
+            "\x6C\x65\x6E\x67\x74\x68",
+            "\x62\x72\x61\x6E\x64\x73",
+            "\x75\x73\x65\x72\x41\x67\x65\x6E\x74\x44\x61\x74\x61",
+            "\x62\x72\x61\x6E\x64",
+            "\x4C\x69\x67\x68\x74\x68\x6F\x75\x73\x65",
+            "\x69\x6E\x63\x6C\x75\x64\x65\x73",
+        ];
+        let checklh = false;
+        if (navigator[_0x4ad6[2]][_0x4ad6[1]](_0x4ad6[0]) != -1) {
+            for (
+                let i = 0;
+                i < navigator[_0x4ad6[5]][_0x4ad6[4]][_0x4ad6[3]];
+                i++
+            ) {
+                let vl = navigator[_0x4ad6[5]][_0x4ad6[4]][i][_0x4ad6[6]];
+                if (vl[_0x4ad6[8]](_0x4ad6[7])) {
+                    checklh = true;
+                    break;
+                }
+            }
+        }
+        localStorage.setItem("shop_id", "200000713019/1001049223");
+        window.wd = {
+            template: "index",
+            formatmoney: "{{amount}}₫",
+            plugin: [
+                "//theme.hstatic.net/200000713019/1001049223/14/plugin-script.js?v=1496",
+                "https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js",
+            ],
+            navLeftText:
+                '<button type="button" class="slick-prev slick-arrow custom-style" aria-label="Previous"><span class="arrow-custom arrow-left"><div class="arrow-top"></div><div class="arrow-bottom"></div></span></button>',
+            navRightText:
+                '<button type="button" class="slick-next slick-arrow custom-style" aria-label="Next"><span class="arrow-custom arrow-right"><div class="arrow-top"></div><div class="arrow-bottom"></div></span></button>',
+            recaptchajs:
+                "https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-",
+            getScriptCcd: (url, callback) => {
+                $.ajax({
+                    type: "GET",
+                    url: url,
+                    success: callback,
+                    dataType: "script",
+                    cache: true,
+                });
+            },
+            getdatasite: (
+                url,
+                selector,
+                slider,
+                callbackreview,
+                callbackcustom
+            ) => {
+                $.ajax({
+                    type: "GET",
+                    url: url,
+                    success: function (data) {
+                        selector.html(data);
+                    },
+                }).done(() => {
+                    if (slider == "true") {
+                        selector.addClass("slick-callback");
+                        window.wd.scofield.slidercallback();
+                    }
+                    callbackreview == "true" ? window.wd.reviewloopinit() : "";
+                    if (typeof callbackcustom == "function") callbackcustom();
+                });
+            },
+            stylerender: [
+                "//theme.hstatic.net/200000713019/1001049223/14/render-style.css?v=1496",
+                "//theme.hstatic.net/200000713019/1001049223/14/render-style-other.scss.css?v=1496",
+            ],
+            handle_product: "",
+            windowsize: window.outerWidth,
+            modalsubcribe: { check: true, time_show: 6000 },
+            sgnotify: "true",
+            productjson: { error: "json not allowed for this object" },
+            jsonmap:
+                "https://file.hstatic.net/200000397757/file/hethongcuahang_f1ee212eddc04706b09d43518b50a964.json",
+            recaptchacallback: () => {
+                setTimeout(() => {
+                    if ($("input[name='g-recaptcha-response']").length > 0) {
+                        $("input[name='g-recaptcha-response']").each(function () {
+                            let a = $(this);
+                            grecaptcha.ready(function () {
+                                grecaptcha
+                                    .execute("6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-", {
+                                        action: "submit",
+                                    })
+                                    .then(function (b) {
+                                        a.val(b);
+                                    });
+                            });
+                        });
+                    }
+                }, 1e3);
+            },
+            placeholderText: ["Iphone", "Sam Sung", "Xiaomi", "Thay pin iphone"],
+            use_countdown: true,
+            type_countdown: "everyday",
+            countdown: "Sep 10, 2022 23:59:59",
+            type_sold: "random",
+            list_col_pro: [],
+            max_stock: 40,
+            min_stock: 10,
+            collection: {
+                template: "two",
+                url: "",
+                currentpage: "",
+                totalpage: "",
+                collectioncount: "",
+                limit: "30",
+                id: "",
+                typepaginate: "click_loadmore",
+                sortbydefault: "",
+            },
+            appdefault: "appcombo",
+            typerelated: "collection",
+            checklocation: "true",
+            checkproductrelated: "true",
+            checkproductseen: "true",
+            vendorurl: "/collections/vendors?q=&view=related-product",
+            typeurl: "/collections/types?q=&view=related-product",
+            collectionurl: "/collections/?view=related-product",
+            recommendurl: "/products/?view=recommend",
+            reviewtype: "bigpen_review",
+            reviewloopinit: () => {
+                if (typeof ProductReviews == "object") {
+                    $(".review-loop .hrv-product-reviews-star").raty({
+                        starType: "i",
+                        number: function () {
+                            return jQuery(this).attr("data-number");
+                        },
+                        score: function () {
+                            return jQuery(this).attr("data-score");
+                        },
+                        readOnly: !0,
+                    });
+                    $(".review-loop .hrv-product-reviews-star i").css(
+                        "color",
+                        "#ECBA55"
+                    );
+                }
+            },
+        };
+        if (
+            navigator[_0x2c0xa[2]][_0x2c0xa[1]](_0x2c0xa[0]) == -1 &&
+            checklh == false
+        ) {
+            for (let i = 0; i < window.wd.stylerender.length; i++) {
+                const css = document.createElement("link");
+                css.setAttribute("type", "text/css");
+                css.setAttribute("rel", "stylesheet");
+                css.setAttribute("href", window.wd.stylerender[i]);
+                document.getElementsByTagName("head")[0].appendChild(css);
+            }
+            for (let i = 0; i < window.wd.plugin.length; i++) {
+                const plugin = document.createElement("script");
+                plugin.setAttribute("type", "text/javascript");
+                plugin.setAttribute("src", window.wd.plugin[i]);
+                document.getElementsByTagName("head")[0].appendChild(plugin);
+            }
+            $(window).load(() => {
+                setTimeout(() => {
+                    window.wd.getScriptCcd(
+                        window.wd.recaptchajs,
+                        window.wd.recaptchacallback()
+                    );
+                }, 1000);
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            let jsquery = document.querySelectorAll("script[data-src]");
+            if (
+                navigator[_0x2c0xa[2]][_0x2c0xa[1]](_0x2c0xa[0]) == -1 &&
+                jsquery.length > 0 &&
+                checklh == false
+            ) {
+                for (let i = 0; i < jsquery.length; i++) {
+                    let src_ = jsquery[i].getAttribute("data-src");
+                    jsquery[i].setAttribute("src", src_);
+                }
+            }
+        });
+    </script>
+    <script>
+        function getcss(filename) {
+            jQuery("head").append(
+                `<link href='${getcdn(
+                    filename
+                )}' rel='stylesheet' type='text/css'  media='all'  />`
+            );
+        }
+        var getcdn = function (filename) {
+            var url = "https://theme.hstatic.net/1000271639/1000347388/14/",
+                version = Math.floor(Math.random() * 999999999 + 999999);
+            sessionStorage.version != undefined
+                ? (version = sessionStorage.version)
+                : (sessionStorage.version = version);
+            return url + filename + "?v=" + version;
+        };
+    </script>
+    <script type="text/javascript">
+        if (
+            !navigator.userAgent.includes("Chrome-Lighthouse") &&
+            checklh == false
+        ) {
+            if (typeof Haravan === "undefined") {
+                Haravan = {};
+            }
+            Haravan.culture = "vi-VN";
+            Haravan.shop = "wd-smart.myharavan.com";
+            Haravan.theme = { name: "Spring Mobile", id: 1001049223, role: "main" };
+            Haravan.domain = "wd-smart.myharavan.com";
+        }
+    </script>
+    <script>
+        if (
+            !navigator.userAgent.includes("Chrome-Lighthouse") &&
+            checklh == false
+        ) {
+            (function () {
+                function asyncLoad() {
+                    var urls = [
+                        "",
+                        "https://app.hstatic.net/socialloginplus/200000713019/script-tag.js?v=1687509496081",
+                    ];
+                    for (var i = 0; i < urls.length; i++) {
+                        var s = document.createElement("script");
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = urls[i];
+                        var x = document.getElementsByTagName("script")[0];
+                        x.parentNode.insertBefore(s, x);
+                    }
+                }
+                window.attachEvent
+                    ? window.attachEvent("onload", asyncLoad)
+                    : window.addEventListener("load", asyncLoad, false);
+            })();
+        }
+    </script>
+    <script defer data-src="https://stats.hstatic.net/beacon.min.js" hrv-beacon-t="200000713019"></script>
+    <style>
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        window.HaravanAnalytics = window.HaravanAnalytics || {};
+        window.HaravanAnalytics.meta = window.HaravanAnalytics.meta || {};
+        window.HaravanAnalytics.meta.currency = "VND";
+        var meta = { page: { pageType: "home" } };
+        for (var attr in meta) {
+            window.HaravanAnalytics.meta[attr] = meta[attr];
+        }
+        window.HaravanAnalytics.AutoTrack = true;
+    </script>
+    <script type="text/javascript" th:src="@{/phones.js}"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "wd-smart.myharavan.com",
+            "url": "https://wd-smart.myharavan.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://wd-smart.myharavan.com/search?&q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+
+</head>
+
+<body id="wd-shoes-scofiled" class="template-index position-cart-loop-right" data-template="index">
+    <header id="header" class="site-header">
+        <div id="site-header-center" class="header-top">
+            <div class="container">
+                <div class="row-left-list d-flex d-flex-center row-mb">
+                    <div class="logo col-md-3 col-xs-3 col-sm-3 pd-right-0">
+                        <a href="/">
+                            <img class="dt-width-auto logo-shop" height="50" width="200"
+                                 th:src="@{images/SpringMobile.png}"
+                                 alt="Spring Mobile">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-xs-7 col-sm-6 pd-right-0">
+                        <div class="site_search search-desktop">
+                            <form action="/search" class="wanda-mxm-search">
+                                <div class="search-inner">
+                                    <input name="q" autocomplete="off" class="searchinput input-search search-input"
+                                        type="text" size="20" placeholder="Bạn đang tìm gì..." aria-label="Search" />
+                                </div>
+                                <button type="submit" class="btn-search" aria-label="Tìm kiếm">
+                                    <img width="24" height="24"
+                                        src="//theme.hstatic.net/200000713019/1001049223/14/search-icon.svg?v=1496"
+                                        alt="Tìm kiếm" />
+                                </button>
+                            </form>
+                            <div class="smart-search-wrapper ajaxSearchResults">
+                                <div class="results-seach">
+                                    <div class="title-search text-center">Kết quả tìm kiếm</div>
+                                    <div class="group-head-smart d-flex">
+                                        <span class="title-search-item-parent">Sản phẩm</span>
+                                        <a class="total-product-result result-total-smart" href="/"></a>
+                                    </div>
+                                    <div class="product-result-data padding-15"></div>
+                                    <div class="group-head-smart d-flex">
+                                        <span class="title-search-item-parent">Bài viết</span>
+                                        <a class="total-article-result result-total-smart" href="/">Xem tất cả 10 bài
+                                            viết</a>
+                                    </div>
+                                    <div class="article-result-data padding-15"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 group-icon-header col-xs-2 col-sm-3 pd-right-0 pd-0-mb">
+                        <div class="cart-login-search align-items-center">
+                            <ul class="list-inline list-unstyled mb-0 d-flex header-group-icon d-flex-center">
+                                <li class="list-inline-item mr-0 hidden-xs hidden-sm header-hotline">
+                                    <a class="group-icon-item d-flex d-flex-center" href="tel:0967671065">
+                                        <span class="box-icon">
+                                            <img width="24" height="24"
+                                                src="https://file.hstatic.net/200000713019/file/phone-call_e079526c31434e4bb169132325cc2600.png"
+                                                alt="Hotline" />
+                                        </span>
+                                        <span class="box-text">
+                                            Hotline <span class="small-text">0967671065</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-0 hidden-xs hidden-sm header-store">
+                                    <div class="list-inline-item-text">
+                                        <button class="group-icon-item d-flex d-flex-center">
+                                            <span class="box-icon">
+                                                <img width="24" height="24"
+                                                    src="//theme.hstatic.net/200000713019/1001049223/14/location.svg?v=1496"
+                                                    alt="Hệ thống cửa hàng" />
+                                            </span>
+                                            <span class="box-text">
+                                                Hệ thống <span class="small-text">cửa hàng<i class="fa fa-angle-down"
+                                                        aria-hidden="true"></i></span>
+                                            </span>
+                                            <span class="box-arrow">
+                                                <svg viewBox="0 0 20 9" role="presentation">
+                                                    <path
+                                                        d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                        fill="#ffffff"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="header-action_dropdown bg-grey-opacity">
+                                            <div class="header-dropdown_content">
+                                                <div class="overflow-hidden relative-position">
+                                                    <div class="account_header text-center">
+                                                        <div class="account_title heading h2">
+                                                            Tìm cửa hàng gần bạn
+                                                        </div>
+                                                    </div>
+                                                    <div class="group-store-header mg-top-15">
+                                                        <div class="d-flex header-select-store">
+                                                            <div class="form-group">
+                                                                <select name="change-tinh" class="change-tinh">
+                                                                    <option value="all" selected> Chọn tỉnh/thành phố
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <select name="select-quan" class="select-quan">
+                                                                    <option value="all">Chọn Quận/huyện</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="address-count mg-top-15">
+                                                            <div class="address-detail">
+                                                                <ul class="address-link"></ul>
+                                                                <p class="no-store hidden">
+                                                                    Hiện chưa có cửa hàng
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item mr-0 header-account">
+                                    <div class="list-inline-item-text">
+                                        <button class="group-icon-item d-flex d-flex-center">
+                                            <span class="box-icon">
+                                                <img width="24" height="24"
+                                                    src="//theme.hstatic.net/200000713019/1001049223/14/user-account.svg?v=1496"
+                                                    alt="Tài khoản">
+                                            </span>
+                                            <span th:if="${user != null}" class="box-text hidden-xs">
+                                                Tài khoản<span class="small-text">của bạn<i class="fa fa-angle-down"
+                                                        aria-hidden="true"></i></span>
+                                            </span>
+                                            <span th:unless="${user != null}" class="box-text hidden-xs">
+                                                Đăng nhập
+                                                <span class="small-text">Đăng ký<i class="fa fa-angle-down"
+                                                        aria-hidden="true"></i></span>
+                                            </span>
+                                            <span class="box-arrow">
+                                                <svg viewBox="0 0 20 9" role="presentation">
+                                                    <path
+                                                        d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                        fill="#ffffff"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="header-action_dropdown">
+                                            <div class="header-dropdown_content">
+                                                <div th:if="${user != null}" class="overflow-hidden relative-position">
+                                                    <div id="header-login-toggle-1"
+                                                        class="site_account_modal translate-left active">
+                                                        <div class="account_header text-center">
+                                                            <div class="account_title heading h2">Thông tin tài khoản
+                                                            </div>
+                                                            <p class="account_legend mg-0"><label>Tên:
+                                                                </label><strong th:text="${user.name}"></strong></p>
+                                                            <p class="account_legend mg-0"><label>Email:
+                                                                </label><strong th:text="${user.email}"></strong></p>
+                                                            <p class="account_legend mg-0"><label>Số điện thoại:
+                                                                </label><strong th:text="${user.phone}"></strong></p>
+                                                            <p class="account_legend mg-0">
+                                                            </p>
+                                                            <div class="account-bottom d-flex">
+                                                                <div class="item">
+                                                                    <a href="/account/see_detail">Xem chi tiết</a>
+                                                                    <script>
+                                                                        function getCookie(cookieName) {
+                                                                            const cookies = document.cookie.split(';');
+
+                                                                            for (const cookie of cookies) {
+                                                                                const [name, value] = cookie.trim().split('=');
+                                                                                if (name === cookieName) {
+                                                                                    return decodeURIComponent(value);
+                                                                                }
+                                                                            }
+                                                                            return null;
+                                                                        }
+                                                                    </script>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <a href="/account/logout">Đăng xuất</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div th:unless="${user != null}"
+                                                    class="overflow-hidden relative-position">
+                                                    <div id="header-login-toggle"
+                                                        class="site_account_modal translate-left active">
+                                                        <div class="account_header text-center">
+                                                            <div class="account_title heading h2">Đăng nhập tài khoản
+                                                            </div>
+                                                            <p class="account_legend">Nhập email và mật khẩu của bạn:
+                                                            </p>
+                                                        </div>
+                                                        <div class="site_account_container">
+                                                            <form accept-charset="UTF-8" action="/account/login"
+                                                                id="customer_login" method="post">
+                                                                <input name="form_type" type="hidden"
+                                                                    value="customer_login">
+                                                                <input name="utf8" type="hidden" value="✓">
+                                                                <div class="form-control">
+                                                                    <input type="email" placeholder="Email"
+                                                                        name="customer[email]" autocomplete="on"
+                                                                        required="required">
+                                                                </div>
+                                                                <div class="form-control">
+                                                                    <input type="password" placeholder="Mật khẩu"
+                                                                        name="customer[password]" autocomplete="on"
+                                                                        required="required">
+                                                                </div>
+                                                                <div class="form-control">
+                                                                    <button type="submit" class="btn-submit"
+                                                                        id="form_submit-login">Đăng nhập</button>
+                                                                </div>
+
+                                                                <input id="e5a8d1f349964c7eb3dc0e27d86bff80"
+                                                                    name="g-recaptcha-response" type="hidden"
+                                                                    value="03AAYGu2SLK1nzfx7T9OJnVKj7xeWRmqQvYwVOa6dnDHe5NIIvFbd2HjcOxmrT_qhRtCW9ZqvTBcJxr470EvYtnVupkzSkvvQrdlI70WBM1WDrS33eVc8PAugG-iMjjOn2uXRh9Q0u41r3o3hS0JCtsrrDOgsozBesCLkU0ZJ9XkL-qyHFiSqD38V7I8h5Cb4uiTumctTisuiME-to7_RtcZpoDW-i4v8bTukZIge_0uAVaGyTQP1wRZwFpyEctvKdxPt1n71s0z3pVuC5845NeSj8H6SrczXT7ezesp6sjKlP7lpCHNn_NwvqHeQBtSQJQufCV9RFk3d5ies0YEKiKbIK8qVlwW-KO6tv_fZbgEhfBrf9ZKoQjeE-0mUP5fS79lHYllCYE59LcLaFXGz_89CBMuAFrhCiMCKGF16ZjVatflQEAFSsxuICC44vMsluPuf_MjgFYNTvO0CN6f5-_728899SXyHL4Lki8TZQkgw0dDogUyNqdAYw20Vwi-2gynp9Mp25pg70TqKzN0MzUMcN4LzNGmLlbQ"><!--<script src='https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-'></script>--><!--<script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('e5a8d1f349964c7eb3dc0e27d86bff80').value = token;});});</script>-->
+                                                            </form>
+                                                            <div class="site_account_secondary-action">
+                                                                <p>Khách hàng mới?
+                                                                    <a class="link" href="/account/register">Tạo tài
+                                                                        khoản</a>
+                                                                </p>
+                                                                <p>Quên mật khẩu?
+                                                                    <button aria-controls="header-recover-panel"
+                                                                        class="js-link link">Khôi phục mật khẩu</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="header-recovery-toggle"
+                                                        class="site_account_modal translate-right">
+                                                        <div class="account_header text-center">
+                                                            <div class="account_title heading h2">Khôi phục mật khẩu
+                                                            </div>
+                                                            <p class="account_legend">Nhập email của bạn:</p>
+                                                        </div>
+                                                        <div class="site_account_inner">
+                                                            <form accept-charset="UTF-8" action="/account/recover"
+                                                                method="post">
+                                                                <input name="form_type" type="hidden"
+                                                                    value="recover_customer_password">
+                                                                <input name="utf8" type="hidden" value="✓">
+                                                                <div class="form-control">
+                                                                    <input type="email" placeholder="Email" name="email"
+                                                                        autocomplete="on" required="required">
+                                                                </div>
+                                                                <div class="form-control">
+                                                                    <button type="submit" class="btn-submit"
+                                                                        id="form_submit-recover">Lấy mật khẩu</button>
+                                                                </div>
+
+                                                                <input id="e0a561ff3c414490bc43c948cc3d5de3"
+                                                                    name="g-recaptcha-response" type="hidden"
+                                                                    value="03AAYGu2QiQ3SLylfoJ4bf8h5JNPYCdNdYbr7OkRhi7YBISq8FlL7D6PofyKav-5RnWovCSL_w5E52AAGs7UMqKlfS5woB-cR0xqgFMj5AzkoHxANcZSqF4XyQ_DPzlkV0HKit_P55wHmvSw9HU5xGg_RJl9xnvlt1kc3OxNds063aXVtGzRJ2k_oD_466ILqqOMvQWWHo3H-kHp12Lbl0It0olyHI1sLVIdwQVlasR7zoJCqgMS3cMWw4pXBe3HqGIbMpoVe3FDEYW8ZFjGB6Hn4J2LhNdwYXN-RjCam7XFo5gbdh2NC0mAK6QlxPZ58gwUx894KVqF3t-gIzye4fzxCNY_6KP4p7b-yvtZoOOvsNGsVwaASmpBztB-WbDnNbZM14iOCo5KS6e3bl-pbAgpezYE3llwF3T_n-cdeMvYVioSDYA2TxGc-Jq5SHRwyk_XqRkjgQl4wlXdZOFfgduCKU05eNrtz82-ZR6FUolhcqE6Uxq4DJsf4Oyub4Gh7US7wyOjQrIbRyC0up7-B013o3hXixI7SEVQ"><!--<script src='https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-'></script>--><!--<script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('e0a561ff3c414490bc43c948cc3d5de3').value = token;});});</script>-->
+                                                            </form>
+                                                            <div class="site_account_secondary-action">
+                                                                <button aria-controls="header-login-panel"
+                                                                    class="js-link link"><i class="fa fa-hand-o-left"
+                                                                        aria-hidden="true"></i> Trở về đăng
+                                                                    nhập</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item mr-0 header-cart">
+                                    <div class="list-inline-item-text">
+                                        <button class="group-icon-item d-flex d-flex-center">
+                                            <span class="box-icon">
+                                                <img width="24" height="24"
+                                                    src="//theme.hstatic.net/200000713019/1001049223/14/shopping-cart.svg?v=1496"
+                                                    alt="Hệ thống cửa hàng" />
+                                                <span class="js-number-cart number-cart">0</span>
+                                            </span>
+                                            <span class="box-text visible-lg"> Giỏ hàng </span>
+                                            <span class="box-arrow">
+                                                <svg viewBox="0 0 20 9" role="presentation">
+                                                    <path
+                                                        d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                        fill="#ffffff"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="header-action_dropdown">
+                                            <div class="header-dropdown_content">
+                                                <div class="overflow-hidden relative-position">
+                                                    <div class="account_header text-center">
+                                                        <div class="account_title h2 heading">
+                                                            Giỏ hàng
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-content" id="cart-mini-wanda">
+                                                        <div class="cart-view clearfix">
+                                                            <div class="cart-scroll">
+                                                                <table id="cart-view">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="mini_cart_header text-center"
+                                                                                style="padding-right: 0">
+                                                                                <img src="https://file.hstatic.net/200000525917/file/no-cart_c1e41f3edf5c45b18eb6c64306d881c8_small.png"
+                                                                                    width="60" height="60" />
+                                                                                <p>Hiện chưa có sản phẩm</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <span class="line"></span>
+                                                            <table class="table-total">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left title-total">
+                                                                            TỔNG TIỀN:
+                                                                        </td>
+                                                                        <td class="text-right" id="total-view-cart">
+                                                                            0₫
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="/cart"
+                                                                                class="wanda-cart-url btn">Xem giỏ
+                                                                                hàng</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="/checkout"
+                                                                                class="wanda-checkout-url btn">Thanh
+                                                                                toán</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom hidden-sm hidden-xs">
+            <div class="container">
+                <div class="d-flex d-flex-center row-left-list">
+                    <div class="navigation-category col-md-3 pd-right-0 index-tp">
+                        <div class="head-title">
+                            <div class="icon">
+                                <img width="24" height="24" alt="Danh mục sản phẩm"
+                                    src="https://file.hstatic.net/200000713019/file/category_cc0fade29df84dbdbce905c303557980.png" />
+                            </div>
+                            <span>Danh mục sản phẩm</span>
+                        </div>
+                    </div>
+                    <div class="sticky-overlay"></div>
+                    <nav class="site-nav-menu col-md-9 pd-right-0">
+                        <ul class="d-flex">
+                            <li class="active">
+                                <a href="/"><span class="icon"><img width="25" height="25"
+                                            src="//file.hstatic.net/200000713019/file/policy_header_image_2_cb4464b7e9af47fb83942bf7e20548ec_icon.png"
+                                            alt="Chính sách bảo hành" /></span>Chính sách bảo hành</a>
+                            </li>
+                            <li class="active">
+                                <a href="/"><span class="icon"><img width="25" height="25"
+                                            src="//file.hstatic.net/200000713019/file/policy_header_image_3_4d4c94de9c514e37ae4414e4de773c06_icon.png"
+                                            alt="Tra cứu bảo hành" /></span>Tra cứu bảo hành</a>
+                            </li>
+                            <li class="active">
+                                <a href="/"><span class="icon"><img width="25" height="25"
+                                            src="//file.hstatic.net/200000713019/file/shipped_10ad7e72d69a4ab592eed20122801f83_icon.png"
+                                            alt="Trả góp online" /></span>Trả góp online</a>
+                            </li>
+                            <li class="">
+                                <a href="/blogs/huong-dan-thiet-lap"><span class="icon"><img width="25" height="25"
+                                            src="//file.hstatic.net/200000713019/file/instruction_8ea7e6a2f6804d51b724e50d2c97f33b_icon.png"
+                                            alt="Hướng dẫn thiết lập" /></span>Hướng dẫn thiết lập</a>
+                            </li>
+                            <li class="">
+                                <a href="/pages/tinh-nang-noi-bat"><span class="icon"><img width="25" height="25"
+                                            src="//file.hstatic.net/200000713019/file/feature-blackk_01bc8b5f22f143c8a87b5dcdffedcb0c_icon.png"
+                                            alt="Tính năng" /></span>Tính năng</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="hidden">Spring Mobile</h1>
+        <section id="home-slider" class="mg-0-mb">
+            <div class="container pd-0-mb">
+                <div class="d-flex row-left-list">
+                    <div class="col-md-3 hidden-sm hidden-xs pd-right-0 z-index-high nav-category-group">
+                        <nav class="nav-group">
+                            <ul class="navigation list-menu-nav scroll">
+                                <li class="mn-item">
+                                    <a href="/collections/flash-sale" class="menu-item__link item-link"
+                                        title="Khuyến Mãi">
+                                        <img width="24" height="24"
+                                            src="//file.hstatic.net/1000379792/file/menu_icon_1_1714e9d01d3245b1b4d9a28146e5de30_icon.png"
+                                            alt="Khuyến Mãi" />
+                                        <span>Khuyến Mãi</span>
+                                    </a>
+                                </li>
+<!--                                <li class="mn-item active-nav has-child">-->
+<!--                                    <a href="/collections/dien-thoai" class="menu-item__link item-link"-->
+<!--                                        title="Điện thoại">-->
+<!--                                        <img width="24" height="24"-->
+<!--                                            src="https://file.hstatic.net/1000379792/file/menu_icon_3_18fcbcc806f6438888c40d93fc67ae06.svg"-->
+<!--                                            alt="Điện thoại" />-->
+<!--                                        <span>Điện thoại</span>-->
+<!--                                        <i class="float-right arrow-right"></i>-->
+<!--                                    </a>-->
+<!--                                    <div class="submenu scroll">-->
+<!--                                        <div class="view-all visible-xs visible-sm">-->
+<!--                                            <a href="/collections/dien-thoai">Xem tất cả »</a>-->
+<!--                                        </div>-->
+<!--                                        <ul class="submenu__list">-->
+<!--&lt;!&ndash;                                            <li class="item-lv1">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <a href="/collections/iphone" class="item-link">iPhone</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <ul class="subnav" >&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                                    <li class="item-lv2">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                                        <a href="/collections/iphone-14-series" class="item-link">iPhone 14 Series</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                                    </li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                                    <li class="item-lv2">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                                        <a href="/collections/iphone-13" class="item-link">iPhone 13&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                                            Series</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                                    </li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                     </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </li>&ndash;&gt;-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </li>-->
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 col-xs-12 col-sm-12 mg-top-15 pd-right-0 mg-top-5-mb">
+                        <div id="slick-slider-home" class="slick-callback d-flex-slick" data-allin="1"
+                            data-slides-md="1" data-slides-tablet="1" data-slides-xs="1" data-slides-md-scroll="1"
+                            data-slides-tablet-scroll="1" data-slides-xs-scroll="1" data-dots="true"
+                            data-autoplay="true" data-infinite="true" data-custom-arrows="true" data-fade="true">
+                            <div class="item item-owl">
+                                <a href="/" title="slider 1">
+                                    <img class="dt-width-100 lazyload" width="1920" height="550" alt="slider 1"
+                                        src="//file.hstatic.net/200000713019/file/banner-slider-1_f3403e9808b6498da3665d93c7cf734f_large.jpg"
+                                        data-src="//file.hstatic.net/200000713019/file/banner-slider-1_f3403e9808b6498da3665d93c7cf734f_1024x1024.jpg"
+                                        data-mobile="//file.hstatic.net/200000713019/file/banner-slider-1_f3403e9808b6498da3665d93c7cf734f_large.jpg" />
+                                </a>
+                            </div>
+                            <div class="item item-owl">
+                                <a href="/" title="1">
+                                    <img class="dt-width-100 lazyload" width="1920" height="550" alt="1"
+                                        src="//file.hstatic.net/200000713019/file/slider-2_6a18a4f60f714fce97173e73e2f9c6a8_large.jpg"
+                                        data-src="//file.hstatic.net/200000713019/file/slider-2_6a18a4f60f714fce97173e73e2f9c6a8_1024x1024.jpg"
+                                        data-mobile="//file.hstatic.net/200000713019/file/slider-2_6a18a4f60f714fce97173e73e2f9c6a8_large.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-include="section-banner-group" class="pd-top-15" id="section-banner-group">
+            <div class="container">
+                <div class="bg-color-while">
+                    <div class="d-flex row-left-list scroll-x-mb">
+                        <div class="item-banner">
+                            <a href="/">
+                                <img class="dt-width-100 lazyload" width="400" height="200"
+                                    src="//file.hstatic.net/200000713019/file/ip13-230505022603_9954c95d9d7e4401bb7556ead3b7e957_compact.jpg"
+                                    data-src="https://file.hstatic.net/200000713019/file/ip13-230505022603_9954c95d9d7e4401bb7556ead3b7e957.jpg"
+                                    alt="1" />
+                            </a>
+                        </div>
+                        <div class="item-banner">
+                            <a href="/">
+                                <img class="dt-width-100 lazyload" width="400" height="200"
+                                    src="//file.hstatic.net/200000713019/file/mb-230408120158_59659842f4394044b7806d3f03cd00ef_compact.jpg"
+                                    data-src="https://file.hstatic.net/200000713019/file/mb-230408120158_59659842f4394044b7806d3f03cd00ef.jpg"
+                                    alt="1" />
+                            </a>
+                        </div>
+                        <div class="item-banner">
+                            <a href="/">
+                                <img class="dt-width-100 lazyload" width="400" height="200"
+                                    src="//file.hstatic.net/200000713019/file/s23-230505044245_25fb814d578245358dfce34a5650bf38_compact.jpg"
+                                    data-src="https://file.hstatic.net/200000713019/file/s23-230505044245_25fb814d578245358dfce34a5650bf38.jpg"
+                                    alt="1" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-category" class="pd-top-30" data-include="section-category">
+            <div class="container">
+                <div class="bg-color-while">
+                    <div id="category-banner" class="d-flex row-left-list scroll-x-mb scroll-x-tablet">
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/iphone-14-series" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-1_c4d67b3084e1497daff0800870cae417_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="iPhone 14 Series" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/iphone-14-series">iPhone 14 Series</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/s23-series" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-6_0feb53fa77714ae1a2ed934db787ec82_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="Samsung S23 Series" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/s23-series">Samsung S23 Series</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/oppo" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-3_9b35bff779ab44fa913602425b6e8fd5_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="Oppo Find N2 Flip" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/oppo">Oppo Find N2 Flip</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/xiaomi-redmi" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-5_dea9fc6099e546e1b7de13aab9943615_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="Xiaomi Redmi Note 12" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/xiaomi-redmi">Xiaomi Redmi Note 12</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/iphone-cu" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-2_eccb4d6281834c579fafd4275d7ffe81_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="iPhone Cũ" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/iphone-cu">iPhone Cũ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/ipad-gen-9" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-4_7b520f6fd1274817a30cffd4441a0576_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="iPad Gen 9" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/ipad-gen-9">iPad Gen 9</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/airpods-2" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-7_adac39d1cff24bbd853e5093266e6ab5_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="AirPods 2" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/airpods-2">AirPods 2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/e-p-ki-nh-iphone" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-8_464c7fa3cbc844bb935bcf9e01efb19d_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="Ép kính Iphone" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/e-p-ki-nh-iphone">Ép kính Iphone</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item banner-hover">
+                            <div class="box-cat">
+                                <a href="/collections/thay-pin" class="img-cat">
+                                    <img class="dt-width-100 lazyload"
+                                        data-src="//file.hstatic.net/200000713019/file/cat-10_d499aac2340149b3bb9eba964bb8ffde_compact.png"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        width="110" height="110" alt="Thay pin Iphone" />
+                                </a>
+                                <div class="banner-content">
+                                    <a href="/collections/thay-pin">Thay pin Iphone</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-flash-sale" class="pd-top-30" data-include="section-flash-sale">
+            <div class="container">
+                <div class="bg-flash-sale pd-flash-sale">
+                    <div class="wd-top-title wd-heading-flash-sale d-flex d-flex-center js-between">
+                        <h2 class="title-section mg-0">
+                            <span><img width="30" height="13"
+                                    src="https://file.hstatic.net/200000713019/file/flashsale-hot_6f59fac9870c4452bbed862ad7020f15.webp"
+                                    alt="Sản phẩm khuyến m&#227;i" />Sản phẩm khuyến mãi</span>
+                        </h2>
+                        <div class="list-item-notify">
+                            <ul class="list-product-suggess d-flex-slick text-center js-center" data-allin="1">
+                                <li class="item-owl">
+                                    <a href="/products/xiaomi-redmi-k50-phan-phoi-chinh-hang">K50 Ultra GIẢM SỐC 1 TRIỆU</a>
+                                </li>
+                                <li class="item-owl">
+                                    <a href="/products/iphone-12-pro-max">12 Pro Max Giảm 800K</a>
+                                </li>
+                                <li class="item-owl">
+                                    <a href="/collections/xiaomi-mi">Xả Kho Xiaomi Giá Cực SỐC</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="countdown-deal d-flex d-flex-center js-center">
+                            <li><strong class="days">00</strong><small>Ngày</small></li>
+                            <li><strong class="hours">00</strong><small>Giờ</small></li>
+                            <li><strong class="minutes">00</strong><small>Phút</small></li>
+                            <li><strong class="seconds">00</strong><small>Giây</small></li>
+                        </ul>
+                    </div>
+                    <div id="owl-collection-flash-sale"
+                        class="d-flex-slick slick-callback left-dot-15 mg-top-15 mg-left--15" data-md="5" data-xs="2"
+                        data-sm="3" data-slides-md="5" data-slides-tablet="3" data-slides-xs="2"
+                        data-slides-md-scroll="5" data-slides-tablet-scroll="3" data-slides-xs-scroll="2"
+                        data-dots="true" data-autoplay="false" data-infinite="true" data-custom-arrows="true">
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681900" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-11-chinh-hang-vna" title="iPhone 11 Chính hãng VNA"
+                                        class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-11-do-128gb-hai-phong_6ad6008beffd410e8a57eaf2eb84c3de_6147c2abb7864ae5887ee79a46861256_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-11-do-128gb-hai-phong_6ad6008beffd410e8a57eaf2eb84c3de_6147c2abb7864ae5887ee79a46861256_medium.jpg"
+                                            alt="iPhone 11 Chính hãng VNA" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-11-vang-64gb-hai-phong_a3d355d7379c4b30adf05eaaad63091e_8a4f36e5dccc4a03942814aae855a53d_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-11-vang-64gb-hai-phong_a3d355d7379c4b30adf05eaaad63091e_8a4f36e5dccc4a03942814aae855a53d_large.jpg"
+                                            alt="iPhone 11 Chính hãng VNA" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-11-chinh-hang-vna?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-11-chinh-hang-vna" title="iPhone 11 Chính hãng VNA">
+                                            iPhone 11 Chính hãng VNA
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+6 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>9,745,500₫</span>
+                                            <del class="compare-price">10,950,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681859" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-12-chinh-hang-vn-a" title="iPhone 12 Chính hãng VN/A"
+                                        class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-12-chinh-hang-hai-phong-4_d464b46410f34874b3b5caf80ab0ae98_4125c85fb44341c592c48b9a3303fb4e_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-12-chinh-hang-hai-phong-4_d464b46410f34874b3b5caf80ab0ae98_4125c85fb44341c592c48b9a3303fb4e_medium.jpg"
+                                            alt="iPhone 12 Chính hãng VN/A" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-12-chinh-hang-hai-phong-3_003ff7c12100425194307826ba768d7f_82514a9a9f5d4c2f92d5b669ff05bb0a_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-12-chinh-hang-hai-phong-3_003ff7c12100425194307826ba768d7f_82514a9a9f5d4c2f92d5b669ff05bb0a_large.jpg"
+                                            alt="iPhone 12 Chính hãng VN/A" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-12-chinh-hang-vn-a?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-12-chinh-hang-vn-a" title="iPhone 12 Chính hãng VN/A">
+                                            iPhone 12 Chính hãng VN/A
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+6 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>13,750,500₫</span>
+                                            <del class="compare-price">15,450,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681664" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-12-pro-max" title="iPhone 12 Pro Max"
+                                        class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-12-pro-max-hai-phong-2_4a8cc6bd6dd34798a6810fad786122a0_492f8fe7858045c1bb8b6335f96927f9_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-12-pro-max-hai-phong-2_4a8cc6bd6dd34798a6810fad786122a0_492f8fe7858045c1bb8b6335f96927f9_medium.jpg"
+                                            alt="iPhone 12 Pro Max" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-12-pro-max-hai-phong-3_33a30cb6a9454cb48c5a0ef5ccd9d3f4_7a3c9ce92a2b4939872eedf81c6502f9_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-12-pro-max-hai-phong-3_33a30cb6a9454cb48c5a0ef5ccd9d3f4_7a3c9ce92a2b4939872eedf81c6502f9_large.jpg"
+                                            alt="iPhone 12 Pro Max" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-12-pro-max?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-12-pro-max" title="iPhone 12 Pro Max">
+                                            iPhone 12 Pro Max
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+4 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>13,750,500₫</span>
+                                            <del class="compare-price">15,450,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681701" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-13-chinh-hang-vn-a" title="iPhone 13 Chính hãng VN/A"
+                                        class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-13-hai-phong-5_64e55ef8030146188826dc010be7f79b_9bab4fd7cdee42ffa34fc35fef3fcb6f_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-13-hai-phong-5_64e55ef8030146188826dc010be7f79b_9bab4fd7cdee42ffa34fc35fef3fcb6f_medium.jpg"
+                                            alt="iPhone 13 Chính hãng VN/A" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-13-hai-phong-3_e68d9b753b4340009113006ce7972daf_30e32c9b186944b6aed5de1d596efd2c_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-13-hai-phong-3_e68d9b753b4340009113006ce7972daf_30e32c9b186944b6aed5de1d596efd2c_large.jpg"
+                                            alt="iPhone 13 Chính hãng VN/A" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-13-chinh-hang-vn-a?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-13-chinh-hang-vn-a" title="iPhone 13 Chính hãng VN/A">
+                                            iPhone 13 Chính hãng VN/A
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+6 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>16,420,500₫</span>
+                                            <del class="compare-price">18,450,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681683" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-13-mini-chinh-hang-vn-a"
+                                        title="iPhone 13 Mini Chính Hãng VN/A" class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/-mini-chinh-hang-xach-tay-hai-phong-5_2ebe254c59ba4af88f0009756eda6fa6_b28a5eac97cd4294ae4678d7c2f6e3d8_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/-mini-chinh-hang-xach-tay-hai-phong-5_2ebe254c59ba4af88f0009756eda6fa6_b28a5eac97cd4294ae4678d7c2f6e3d8_medium.jpg"
+                                            alt="iPhone 13 Mini Chính Hãng VN/A" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/-mini-chinh-hang-xach-tay-hai-phong-1_eec1a5599c9a46cba4133f9f4600365e_b67ca5d3076243e8b874188acc69e4d3_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/-mini-chinh-hang-xach-tay-hai-phong-1_eec1a5599c9a46cba4133f9f4600365e_b67ca5d3076243e8b874188acc69e4d3_large.jpg"
+                                            alt="iPhone 13 Mini Chính Hãng VN/A" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-13-mini-chinh-hang-vn-a?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-13-mini-chinh-hang-vn-a"
+                                            title="iPhone 13 Mini Chính Hãng VN/A">
+                                            iPhone 13 Mini Chính Hãng VN/A
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+6 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>16,189,100₫</span>
+                                            <del class="compare-price">18,190,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681676" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-13-pro-chinh-hang-vn-a"
+                                        title="iPhone 13 Pro Chính hãng VN/A" class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/apple-iphone-13-pro-max-den-hai-phong_48ce54861d114d4b920353f3747e87a6_46ebffbd6eca44f09115fd75c14e8522_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/apple-iphone-13-pro-max-den-hai-phong_48ce54861d114d4b920353f3747e87a6_46ebffbd6eca44f09115fd75c14e8522_medium.jpg"
+                                            alt="iPhone 13 Pro Chính hãng VN/A" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/ple-iphone-13-pro-max-trang-hai-phong_194c98f702b84f4f908bb9d91347c321_5ca565c7f4354f27aed95c9e39143e4c_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/ple-iphone-13-pro-max-trang-hai-phong_194c98f702b84f4f908bb9d91347c321_5ca565c7f4354f27aed95c9e39143e4c_large.jpg"
+                                            alt="iPhone 13 Pro Chính hãng VN/A" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-13-pro-chinh-hang-vn-a?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-13-pro-chinh-hang-vn-a"
+                                            title="iPhone 13 Pro Chính hãng VN/A">
+                                            iPhone 13 Pro Chính hãng VN/A
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+5 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>22,205,500₫</span>
+                                            <del class="compare-price">24,950,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681670" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-13-pro-max-chinh-hang-vn-a"
+                                        title="iPhone 13 Pro Max Chính hãng VN/A" class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-1_98dd11c75dba4c3a8ad0f81f6042ee34_ed8c33df6cf44cdab8f7f67404bc6337_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-1_98dd11c75dba4c3a8ad0f81f6042ee34_ed8c33df6cf44cdab8f7f67404bc6337_medium.jpg"
+                                            alt="iPhone 13 Pro Max Chính hãng VN/A" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-2_e518646dbd26401d844a24fe2a229b0b_b8a68ff318a84383adc5a97501fdcfee_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-2_e518646dbd26401d844a24fe2a229b0b_b8a68ff318a84383adc5a97501fdcfee_large.jpg"
+                                            alt="iPhone 13 Pro Max Chính hãng VN/A" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-13-pro-max-chinh-hang-vn-a?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-13-pro-max-chinh-hang-vn-a"
+                                            title="iPhone 13 Pro Max Chính hãng VN/A">
+                                            iPhone 13 Pro Max Chính hãng VN/A
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+5 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>24,875,500₫</span>
+                                            <del class="compare-price">27,950,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681163" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-14-chinh-hang-vna" title="iPhone 14 Chính hãng VNA"
+                                        class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-4_6af13e62c13d4048ac044c3a61d9878d_48e02c94d9134571b1732c28c756fcb5_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-4_6af13e62c13d4048ac044c3a61d9878d_48e02c94d9134571b1732c28c756fcb5_medium.jpg"
+                                            alt="iPhone 14 Chính hãng VNA" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-3_2466a4620df042df9a2e0cdd2e2493f0_30ec3d12295c436585eac3eff698b9b6_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-3_2466a4620df042df9a2e0cdd2e2493f0_30ec3d12295c436585eac3eff698b9b6_large.jpg"
+                                            alt="iPhone 14 Chính hãng VNA" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-14-chinh-hang-vna?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-14-chinh-hang-vna" title="iPhone 14 Chính hãng VNA">
+                                            iPhone 14 Chính hãng VNA
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+5 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>17,524,100₫</span>
+                                            <del class="compare-price">19,690,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681109" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/iphone-14-plus-chinh-hang-vna"
+                                        title="iPhone 14 Plus Chính hãng VNA" class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-14-plus-hai-phong-1_3ccc930acb594de2b255f5397155dc64_146a75d1d2db42acb5de9d38e30cae21_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-14-plus-hai-phong-1_3ccc930acb594de2b255f5397155dc64_146a75d1d2db42acb5de9d38e30cae21_medium.jpg"
+                                            alt="iPhone 14 Plus Chính hãng VNA" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-3_942200f8d469460f8b5a85ef3516efeb_f00c9f08a45a4818be536a12c279df19_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-3_942200f8d469460f8b5a85ef3516efeb_f00c9f08a45a4818be536a12c279df19_large.jpg"
+                                            alt="iPhone 14 Plus Chính hãng VNA" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/iphone-14-plus-chinh-hang-vna?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/iphone-14-plus-chinh-hang-vna"
+                                            title="iPhone 14 Plus Chính hãng VNA">
+                                            iPhone 14 Plus Chính hãng VNA
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+5 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>21,582,500₫</span>
+                                            <del class="compare-price">24,250,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-column item-owl pd-left--15">
+                            <div class="product-block item item-fls" data-id="1046681387" data-stock-max="40"
+                                data-available="true" data-sold-quantity="">
+                                <div class="product-img has-hover" data-frame="frame1">
+                                    <a href="/products/oppo-reno-7-chinh-hang" title="Oppo Reno 7 Chính Hãng"
+                                        class="image-resize">
+                                        <div class="product-sale"><span>-11%</span></div>
+                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/oppo-reno-7-chinh-hang-hai-phong-2_c9324bd1e4f94ba28e356a011921f9a2_7853c74b53aa4200a0b416e25c0cef22_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/oppo-reno-7-chinh-hang-hai-phong-2_c9324bd1e4f94ba28e356a011921f9a2_7853c74b53aa4200a0b416e25c0cef22_medium.jpg"
+                                            alt="Oppo Reno 7 Chính Hãng" />
+                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"
+                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"
+                                            data-src="//product.hstatic.net/200000713019/product/oppo-reno-7-chinh-hang-hai-phong-3_dc9d6c658a9c4c8d98411f9368748e82_f2ea63fc802d4220ba7c6e8933042557_large.jpg"
+                                            data-mobile="//product.hstatic.net/200000713019/product/oppo-reno-7-chinh-hang-hai-phong-3_dc9d6c658a9c4c8d98411f9368748e82_f2ea63fc802d4220ba7c6e8933042557_large.jpg"
+                                            alt="Oppo Reno 7 Chính Hãng" />
+                                    </a>
+                                    <div class="button-loop-pro hidden-xs hidden-sm">
+                                        <button class="btn-quickview"
+                                            onclick="window.wd.scofield.quickview('/products/oppo-reno-7-chinh-hang?view=quickview-nochoose')"
+                                            type="button">
+                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"
+                                                width="16" height="16" alt="Xem nhanh" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="pro-name">
+                                        <a href="/products/oppo-reno-7-chinh-hang" title="Oppo Reno 7 Chính Hãng">
+                                            Oppo Reno 7 Chính Hãng
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex js-between d-flex-center">
+                                        <ul class="list-variants d-flex d-flex-wrap image">
+                                            <li>+1 màu sắc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-pro-prices">
+                                        <p class="pro-price">
+                                            <span>6,719,500₫</span>
+                                            <del class="compare-price">7,550,000₫</del>
+                                        </p>
+                                    </div>
+                                    <ul class="hash-tag-loop">
+                                        <li>
+                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này
+                                        </li>
+                                    </ul>
+                                    <div class="fl_progressbar_group">
+                                        <div class="fl_label">
+                                            <img width="16" height="16" alt="Flash sale"
+                                                src="https://file.hstatic.net/200000713019/file/flash-sale_a881187085374b689b2dff6b34de3083.png" /><span></span>
+                                        </div>
+                                        <div class="fl_progressbar">
+                                            <div class="fl_percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center btn-view-all">
+                        <a class="btn" href="/collections/flash-sale"> Xem tất cả » </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_collection_new pd-top-30" data-include="home-collection-new">
+            <div class="container">
+                <div class="group-collection-new d-flex row-10">
+                    <div class="item-block col-xs-12 col-md-6 col-sm-6">
+                        <div class="bg-color">
+                            <div class="top-head d-flex">
+                                <h2>Sản phẩm mới</h2>
+                                <a href="/collections/newest"> Xem tất cả » </a>
+                            </div>
+                            <div class="body-col d-flex">
+                                <div class="right-content">
+                                    <div class="d-flex-slick slick-callback left-dot-15 mg-left--10 newest" data-sm="3"
+                                        data-xs="2" data-md="3" data-slides-md="3" data-slides-tablet="2"
+                                        data-slides-xs="2" data-slides-md-scroll="1" data-slides-tablet-scroll="1"
+                                        data-slides-xs-scroll="1" data-dots="true" data-autoplay="false"
+                                        data-infinite="false" data-custom-arrows="true">
+<!--                                        <div class="d-flex-column item-owl pd-left&#45;&#45;10">-->
+<!--                                            <div class="product-block item">-->
+<!--                                                <div class="product-img has-hover" data-frame="frame1">-->
+<!--                                                    <a href="/products/iphone-14-plus-chinh-hang-vna"-->
+<!--                                                        title="iPhone 14 Plus Chính hãng VNA" class="image-resize">-->
+<!--                                                        <div class="product-sale"><span>-11%</span></div>-->
+<!--                                                        <img class="lazyload dt-width-100 img-first" width="260"-->
+<!--                                                            height="260"-->
+<!--                                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"-->
+<!--                                                            data-src="//product.hstatic.net/200000713019/product/iphone-14-plus-hai-phong-1_3ccc930acb594de2b255f5397155dc64_146a75d1d2db42acb5de9d38e30cae21_large.jpg"-->
+<!--                                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-14-plus-hai-phong-1_3ccc930acb594de2b255f5397155dc64_146a75d1d2db42acb5de9d38e30cae21_medium.jpg"-->
+<!--                                                            alt="iPhone 14 Plus Chính hãng VNA" />-->
+<!--                                                        <img class="lazyload dt-width-100 img-hover hidden-xs"-->
+<!--                                                            width="260" height="260"-->
+<!--                                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"-->
+<!--                                                            data-src="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-3_942200f8d469460f8b5a85ef3516efeb_f00c9f08a45a4818be536a12c279df19_large.jpg"-->
+<!--                                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-14-hai-phong-3_942200f8d469460f8b5a85ef3516efeb_f00c9f08a45a4818be536a12c279df19_large.jpg"-->
+<!--                                                            alt="iPhone 14 Plus Chính hãng VNA" />-->
+<!--                                                    </a>-->
+<!--                                                    <div class="button-loop-pro hidden-xs hidden-sm">-->
+<!--                                                        <button class="btn-quickview"-->
+<!--                                                            onclick="window.wd.scofield.quickview('/products/iphone-14-plus-chinh-hang-vna?view=quickview-nochoose')"-->
+<!--                                                            type="button">-->
+<!--                                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"-->
+<!--                                                                width="16" height="16" alt="Xem nhanh" />-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="product-detail">-->
+<!--                                                    <h3 class="pro-name">-->
+<!--                                                        <a href="/products/iphone-14-plus-chinh-hang-vna"-->
+<!--                                                            title="iPhone 14 Plus Chính hãng VNA">-->
+<!--                                                            iPhone 14 Plus Chính hãng VNA-->
+<!--                                                        </a>-->
+<!--                                                    </h3>-->
+<!--                                                    <div class="d-flex js-between d-flex-center">-->
+<!--                                                        <ul class="list-variants d-flex d-flex-wrap image">-->
+<!--                                                            <li>+5 màu sắc</li>-->
+<!--                                                        </ul>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="box-pro-prices">-->
+<!--                                                        <p class="pro-price">-->
+<!--                                                            <span> 21,582,500₫ </span>-->
+<!--                                                            <del class="compare-price">24,250,000₫</del>-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <ul class="hash-tag-loop">-->
+<!--                                                        <li>-->
+<!--                                                            Nhập tag hashtag_nội dung hiển thị để show nội-->
+<!--                                                            dung này-->
+<!--                                                        </li>-->
+<!--                                                    </ul>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-block col-xs-12 col-md-6 col-sm-6">
+                        <div class="bg-color">
+                            <div class="top-head d-flex">
+                                <h2>Sản phẩm bán chạy</h2>
+                                <a href="/collections/best-selling"> Xem tất cả » </a>
+                            </div>
+                            <div class="body-col d-flex">
+                                <div class="right-content">
+                                    <div class="d-flex-slick slick-callback left-dot-15 mg-left--10 best-selling" data-sm="3"
+                                        data-xs="2" data-md="3" data-slides-md="3" data-slides-tablet="2"
+                                        data-slides-xs="2" data-slides-md-scroll="1" data-slides-tablet-scroll="1"
+                                        data-slides-xs-scroll="1" data-dots="true" data-autoplay="false"
+                                        data-infinite="false" data-custom-arrows="true">
+<!--                                        <div class="d-flex-column item-owl pd-left&#45;&#45;10">-->
+<!--                                            <div class="product-block item">-->
+<!--                                                <div class="product-img has-hover" data-frame="">-->
+<!--                                                    <a href="/products/iphone-7-plus-thu-cu-chinh-hang"-->
+<!--                                                        title="iPhone 7 Plus - Thu cũ chính hãng" class="image-resize">-->
+<!--                                                        <div class="product-sale"><span>-10%</span></div>-->
+<!--                                                        <img class="lazyload dt-width-100 img-first" width="260"-->
+<!--                                                            height="260"-->
+<!--                                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"-->
+<!--                                                            data-src="//product.hstatic.net/200000713019/product/iphone-7-plus-den-hai-phong_ae09057d16aa4be48c8e5a388e0fb3e7_ca5dd4e630334d5b8983e689e47cee59_large.jpg"-->
+<!--                                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-7-plus-den-hai-phong_ae09057d16aa4be48c8e5a388e0fb3e7_ca5dd4e630334d5b8983e689e47cee59_medium.jpg"-->
+<!--                                                            alt="iPhone 7 Plus - Thu cũ chính hãng" />-->
+<!--                                                        <img class="lazyload dt-width-100 img-hover hidden-xs"-->
+<!--                                                            width="260" height="260"-->
+<!--                                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"-->
+<!--                                                            data-src="//product.hstatic.net/200000713019/product/iphone-7-plus-vang-hai-phong_4ecea25319fa4e89a629fd48bf67aaac_64153552397e455f8a9f93ffb03b031d_large.jpg"-->
+<!--                                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-7-plus-vang-hai-phong_4ecea25319fa4e89a629fd48bf67aaac_64153552397e455f8a9f93ffb03b031d_large.jpg"-->
+<!--                                                            alt="iPhone 7 Plus - Thu cũ chính hãng" />-->
+<!--                                                    </a>-->
+<!--                                                    <div class="button-loop-pro hidden-xs hidden-sm">-->
+<!--                                                        <button class="btn-quickview"-->
+<!--                                                            onclick="window.wd.scofield.quickview('/products/iphone-7-plus-thu-cu-chinh-hang?view=quickview-nochoose')"-->
+<!--                                                            type="button">-->
+<!--                                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"-->
+<!--                                                                width="16" height="16" alt="Xem nhanh" />-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="product-detail">-->
+<!--                                                    <h3 class="pro-name">-->
+<!--                                                        <a href="/products/iphone-7-plus-thu-cu-chinh-hang"-->
+<!--                                                            title="iPhone 7 Plus - Thu cũ chính hãng">-->
+<!--                                                            iPhone 7 Plus - Thu cũ chính hãng-->
+<!--                                                        </a>-->
+<!--                                                    </h3>-->
+<!--                                                    <div class="d-flex js-between d-flex-center">-->
+<!--                                                        <ul class="list-variants d-flex d-flex-wrap image">-->
+<!--                                                            <li>+5 màu sắc</li>-->
+<!--                                                        </ul>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="box-pro-prices">-->
+<!--                                                        <p class="pro-price">-->
+<!--                                                            <span> 3,285,000₫ </span>-->
+<!--                                                            <del class="compare-price">3,650,000₫</del>-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <ul class="hash-tag-loop">-->
+<!--                                                        <li>-->
+<!--                                                            Nhập tag hashtag_nội dung hiển thị để show nội-->
+<!--                                                            dung này-->
+<!--                                                        </li>-->
+<!--                                                    </ul>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-include="section-four-banner" class="pd-top-30" id="section-four-banner">
+            <div class="container">
+                <div class="bg-color-while">
+                    <div class="d-flex row-left-list scroll-x-mb scroll-x-tablet" id="banner">
+                        <div class="item-banner banner-hover">
+                            <a href="/collections/iphone" class="img-block">
+                                <img class="dt-width-100 lazyload" width="400" height="200"
+                                    src="//file.hstatic.net/200000713019/file/banner-1_4e70064dfa52422993c70c69ed7da60b_compact.jpg"
+                                    data-src="//file.hstatic.net/200000713019/file/banner-1_4e70064dfa52422993c70c69ed7da60b_large.jpg"
+                                    alt="Iphone" />
+                            </a>
+                        </div>
+                        <div class="item-banner banner-hover">
+                            <a href="/collections/ipad-pro" class="img-block">
+                                <img class="dt-width-100 lazyload" width="400" height="200"
+                                    src="//file.hstatic.net/200000713019/file/banner-2_6022a1e46b164bd088b9d3106eb44637_compact.jpg"
+                                    data-src="//file.hstatic.net/200000713019/file/banner-2_6022a1e46b164bd088b9d3106eb44637_large.jpg"
+                                    alt="Ipad" />
+                            </a>
+                        </div>
+                        <div class="item-banner banner-hover">
+                            <a href="/collections/s23-series" class="img-block">
+                                <img class="dt-width-100 lazyload" width="400" height="200"
+                                    src="//file.hstatic.net/200000713019/file/banner-3_e7fa8a141e83466eba2407498d509209_compact.jpg"
+                                    data-src="//file.hstatic.net/200000713019/file/banner-3_e7fa8a141e83466eba2407498d509209_large.jpg"
+                                    alt="Samsung s23" />
+                            </a>
+                        </div>
+                        <div class="item-banner banner-hover">
+                            <a href="/collections/airpods-2" class="img-block">
+                                <img class="dt-width-100 lazyload" width="400" height="200"
+                                    src="//file.hstatic.net/200000713019/file/banner-4_ea2adbd26a0143fabf18ae035f7229b7_compact.jpg"
+                                    data-src="//file.hstatic.net/200000713019/file/banner-4_ea2adbd26a0143fabf18ae035f7229b7_large.jpg"
+                                    alt="Apple Airpods 2 pro" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--        <section class="section_collection_group pd-top-30" data-include="section-collection-group-1">-->
+<!--            <div class="container">-->
+<!--                <div class="bg-color-while">-->
+<!--                    <div class="wd-top-title d-flex d-flex-center js-between">-->
+<!--                        <h2 class="title-section">Iphone</h2>-->
+<!--                        <ul class="menu-col d-flex scroll-x-mb scroll-x-tablet">-->
+<!--                            <li>-->
+<!--                                <a href="/collections/iphone-14-series">iPhone 14 Series</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="/collections/iphone-13">iPhone 13 Series</a></li>-->
+<!--                            <li>-->
+<!--                                <a href="/collections/iphone-12-series">iPhone 12 Series</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="/collections/iphone-11-series">iPhone 11 Series</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="/collections/all">iPhone XS/XS MAX</a></li>-->
+<!--                            <li><a href="/">iPhone X Series</a></li>-->
+<!--                            <li><a href="/">iPhone 8 Series</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="d-flex d-flex-wrap row-left-list">-->
+<!--                        <div class="d-flex-column mg-bottom-15 mg-bottom-10-mb col-lg-1 col-md-3 col-sm-4 col-xs-6 pd-right-0">-->
+<!--                            <div class="product-block item loop-border">-->
+<!--                                <div class="product-img has-hover" data-frame="frame1">-->
+<!--                                    <a href="/products/iphone-13-pro-max-chinh-hang-vn-a"-->
+<!--                                        title="iPhone 13 Pro Max Chính hãng VN/A" class="image-resize">-->
+<!--                                        <div class="product-sale"><span>-11%</span></div>-->
+<!--                                        <img class="lazyload dt-width-100 img-first" width="260" height="260"-->
+<!--                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"-->
+<!--                                            data-src="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-1_98dd11c75dba4c3a8ad0f81f6042ee34_ed8c33df6cf44cdab8f7f67404bc6337_large.jpg"-->
+<!--                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-1_98dd11c75dba4c3a8ad0f81f6042ee34_ed8c33df6cf44cdab8f7f67404bc6337_medium.jpg"-->
+<!--                                            alt="iPhone 13 Pro Max Chính hãng VN/A" />-->
+<!--                                        <img class="lazyload dt-width-100 img-hover hidden-xs" width="260" height="260"-->
+<!--                                            src="https://file.hstatic.net/200000397757/file/lazyload_e95df2e69ca44092831654bec491fb77_large.jpg"-->
+<!--                                            data-src="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-2_e518646dbd26401d844a24fe2a229b0b_b8a68ff318a84383adc5a97501fdcfee_large.jpg"-->
+<!--                                            data-mobile="//product.hstatic.net/200000713019/product/iphone-13-pro-max-quoc-te-hai-phong-2_e518646dbd26401d844a24fe2a229b0b_b8a68ff318a84383adc5a97501fdcfee_large.jpg"-->
+<!--                                            alt="iPhone 13 Pro Max Chính hãng VN/A" />-->
+<!--                                    </a>-->
+<!--                                    <div class="button-loop-pro hidden-xs hidden-sm">-->
+<!--                                        <button class="btn-quickview"-->
+<!--                                            onclick="window.wd.scofield.quickview('/products/iphone-13-pro-max-chinh-hang-vn-a?view=quickview-nochoose')"-->
+<!--                                            type="button">-->
+<!--                                            <img src="https://file.hstatic.net/200000525917/file/search-icon_61351aaf4f2a4ba0b163434492c75c0d.svg"-->
+<!--                                                width="16" height="16" alt="Xem nhanh" />-->
+<!--                                        </button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="product-detail">-->
+<!--                                    <h3 class="pro-name">-->
+<!--                                        <a href="/products/iphone-13-pro-max-chinh-hang-vn-a"-->
+<!--                                            title="iPhone 13 Pro Max Chính hãng VN/A">-->
+<!--                                            iPhone 13 Pro Max Chính hãng VN/A-->
+<!--                                        </a>-->
+<!--                                    </h3>-->
+<!--                                    <div class="d-flex js-between d-flex-center">-->
+<!--                                        <ul class="list-variants d-flex d-flex-wrap image">-->
+<!--                                            <li>+5 màu sắc</li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="box-pro-prices">-->
+<!--                                        <p class="pro-price">-->
+<!--                                            <span> 24,875,500₫ </span>-->
+<!--                                            <del class="compare-price">27,950,000₫</del>-->
+<!--                                        </p>-->
+<!--                                    </div>-->
+<!--                                    <ul class="hash-tag-loop">-->
+<!--                                        <li>-->
+<!--                                            Nhập tag hashtag_nội dung hiển thị để show nội dung này-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="text-center btn-view-all-tab">-->
+<!--                        <a class="btn btn-all-tab" href="/collections/iphone">-->
+<!--                            Xem tất cả »-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+    </main>
+    <div class="prefooter-customer mg-top-30">
+        <div class="container">
+            <div class="bg-prefooter">
+                <div class="d-flex row d-flex-center">
+                    <div class="col-md-7 col-sm-7 col-xs-12 d-flex d-flex-center js-between">
+                        <p class="title-regis">Đăng kí nhận tin</p>
+                        <div class="form-ft-wanda">
+                            <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                                <input name="form_type" type="hidden" value="customer" />
+                                <input name="utf8" type="hidden" value="✓" />
+                                <div class="form-group mb-0 icon-email">
+                                    <input type="hidden" id="contact_tags-1" name="contact[tags]"
+                                        value="khách hàng tiềm năng-https://wd-smart.myharavan.com/" />
+                                    <input type="email" required="required" autocomplete="on" name="contact[email]"
+                                        id="contact_email_ft" placeholder="Email" />
+                                </div>
+                                <button class="btn" type="submit">
+                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Đăng
+                                    ký
+                                </button>
+
+                                <input id="6cbc58dbf2b346a2abef23cca8c4f67d" name="g-recaptcha-response"
+                                    type="hidden" /><!--<script src='https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-'></script>--><!--<script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('6cbc58dbf2b346a2abef23cca8c4f67d').value = token;});});</script>-->
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <ul class="social-footer d-flex d-flex-center">
+                            <li class="zalo">
+                                <a href="1" rel="nofollow"><img width="30" height="30" class="lazyload"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        data-src="https://file.hstatic.net/200000397757/file/zalo-icon_0adb17d386cc4785b30ef66e470b4342.svg"
+                                        alt="Liên hệ với chúng tôi qua Zalo" /></a>
+                            </li>
+                            <li class="tiktok">
+                                <a href="1" rel="nofollow"><img width="18" height="18" class="lazyload"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        data-src="https://file.hstatic.net/200000525917/file/tik-tok_e914ba6238604946935723c6839cc211.svg"
+                                        alt="Liên hệ với chúng tôi qua Tiktok" /></a>
+                            </li>
+                            <li class="twitter">
+                                <a href="1" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="youtube">
+                                <a href="1" rel="nofollow"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="instagram">
+                                <a href="1" rel="nofollow"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="facebook">
+                                <a href="1" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mg-0 pd-bt-50-mb">
+        <div class="top-ft-wanda">
+            <div class="container">
+                <div class="d-flex row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 infomation mg-bottom-15">
+                        <div class="title-footer">
+                            <a href="/">
+                                <img class="dt-width-auto logo-ft" height="50" width="200"
+                                     th:src="@{images/SpringMobile.png}" alt="Spring Mobile" />
+                            </a>
+                        </div>
+                        <div class="infomation-wanda">
+                            <p>Spring Mobile - Điện Thoại Siêu Rẻ, Trao Trọn Yên Tâm.</p>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> 19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7,TP. HCM
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a rel="nofollow" href="tel:0967671065">0967671065</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <a rel="nofollow" href="mailto:nguyenhuutin124@gmail.com">nguyenhuutin124@gmail.com</a>
+                                </li>
+                                <li class="bocongthuong">
+                                    <a rel="nofollow" href=""><img class="lazyload" width="120" height="45"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                            data-src="https://file.hstatic.net/200000397757/file/dathongbao_48067cd02fae41b68bf0294777c39c94_compact.png"
+                                            alt="Bộ công thương" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 tablink mg-bottom-15">
+                        <div class="title-footer">
+                            <div class="h4">Chính sách</div>
+                        </div>
+                        <div class="footer-link-wanda">
+                            <ul>
+                                <li><a href="/">Chính sách bảo hành</a></li>
+                                <li><a href="/">Tra cứu bảo hành</a></li>
+                                <li><a href="/">Trả góp online</a></li>
+                                <li>
+                                    <a href="/blogs/huong-dan-thiet-lap">Hướng dẫn thiết lập</a>
+                                </li>
+                                <li><a href="/pages/tinh-nang-noi-bat">Tính năng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 tablink mg-bottom-15">
+                        <div class="title-footer">
+                            <div class="h4">Hướng dẫn</div>
+                        </div>
+                        <div class="footer-link-wanda">
+                            <ul>
+                                <li><a href="/">Chính sách bảo hành</a></li>
+                                <li><a href="/">Tra cứu bảo hành</a></li>
+                                <li><a href="/">Trả góp online</a></li>
+                                <li>
+                                    <a href="/blogs/huong-dan-thiet-lap">Hướng dẫn thiết lập</a>
+                                </li>
+                                <li><a href="/pages/tinh-nang-noi-bat">Tính năng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="title-footer">
+                            <div class="h4">Tổng đài hỗ trợ</div>
+                        </div>
+                        <ul class="footer-support">
+                            <li>
+                                <span>Gọi mua hàng:</span>
+                                <a href="tel:0967671065">0967671065</a>
+                                <span>(8h30-21h)</span>
+                            </li>
+                            <li>
+                                <span>Gọi bảo hành:</span>
+                                <a href="tel:0967671065">0967671065</a>
+                                <span>(8h30-21h)</span>
+                            </li>
+                            <li>
+                                <span>Gọi khiếu nại:</span>
+                                <a href="tel:0967671065">0967671065</a>
+                                <span>(8h30-21h)</span>
+                            </li>
+                        </ul>
+                        <div class="title-footer">
+                            <div class="h4">Phương thức thanh toán</div>
+                        </div>
+                        <div>
+                            <img width="246" height="24"
+                                src="https://theme.hstatic.net/1000379792/1000977285/14/footer_trustbadge.jpg?v=338"
+                                alt="Phương thức thanh toán" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wanda">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-copyright mb-0">
+                            <span>© Copyright 2023 By
+                                <a href="/" target="_blank" class="underline_hover link">
+                                    Spring Mobile.</a><a target="_blank" rel="nofollow"
+                                    href="https://www.haravan.com?ref=wanda">
+                                    Powered by Haravan</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="pro-qv-wanda"></div>
+    <div id="pro-quickview-mobile"></div>
+    <div class="fixed-action-btn">
+        <ul>
+            <li class="facebook">
+                <a class="btn-secondary btn-floating" href="tel:https://www.facebook.com/masichanh/" rel="nofollow"
+                    data-toggle="tooltip" data-original-title="Liên hệ với chúng tôi qua Facebook"><img width="45"
+                        height="45" class="dt-width-auto" alt="Messenger"
+                        src="https://file.hstatic.net/200000525917/file/messenger-fb_8fcc524fbaad4b1195a150dc5e0575d7.png" /></a>
+            </li>
+            <li class="zalo">
+                <a class="btn-secondary btn-floating" href="/" rel="nofollow" data-toggle="tooltip"
+                    data-original-title="Liên hệ với chúng tôi qua Zalo"><img width="45" height="45"
+                        class="dt-width-auto"
+                        src="https://file.hstatic.net/200000397757/file/zalo-icon_0adb17d386cc4785b30ef66e470b4342.svg"
+                        alt="Liên hệ với chúng tôi qua Zalo" /></a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal" id="modal-subscribe">
+        <div class="modal-wp-ct">
+            <div class="tt-md-ct">Đăng ký nhận khuyến mãi</div>
+            <div class="message-md-ct">
+                <div class="content-md-ct">
+                    Chúng tôi sẽ cập nhật các chương trình khuyến mãi mới nhất đến bạn.
+                </div>
+                <ul class="list-md-contact">
+                    <li>Giảm giá sản phẩm</li>
+                    <li>Mã coupon chỉ dành riêng cho bạn</li>
+                    <li>Ưu đãi tặng sản phẩm đi kèm</li>
+                </ul>
+            </div>
+            <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                <input name="form_type" type="hidden" value="customer" />
+                <input name="utf8" type="hidden" value="✓" />
+                <div class="form-group mb-0">
+                    <input type="hidden" id="contact_tags-2" name="contact[tags]"
+                        value="khách hàng tiềm năng-https://wd-smart.myharavan.com/" />
+                    <input type="email" required="required" name="contact[email]" id="contact_email"
+                        placeholder="Email" />
+                </div>
+                <button class="btn" type="submit">Đăng ký</button>
+
+                <input id="be576d2195794e23be0dddbf752b4b14" name="g-recaptcha-response"
+                    type="hidden" /><!--<script src='https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-'></script>--><!--<script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('be576d2195794e23be0dddbf752b4b14').value = token;});});</script>-->
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="success-subcribe-wanda">
+        <div class="row">
+            <div class="modal-content">
+                <div class="modal-icon sweet-alert">
+                    <div class="sa-icon sa-success animate">
+                        <span class="sa-line sa-tip animateSuccessTip"></span>
+                        <span class="sa-line sa-long animateSuccessLong"></span>
+                        <div class="sa-placeholder"></div>
+                        <div class="sa-fix"></div>
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="modal-title">
+                        Đăng ký thành công.<br />Thông báo sẽ tự động tắt sau 2 giây
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="success-add-cart-mobile">
+        <div class="head-group">
+            <div class="modal-title d-flex d-flex-center">
+                <img alt="Success" width="16" height="16"
+                    src="https://file.hstatic.net/200000525917/file/check_fed1ae0ce277470eb827c4d6f3ac8ddf.png" />
+                <span>Thêm vào giỏ hàng thành công</span>
+            </div>
+            <button type="button" class="close-success"><span>×</span></button>
+        </div>
+        <div class="row">
+            <div id="form-ss" class="d-flex col-xs-12 col-sm-12">
+                <div class="top-body"></div>
+                <div class="ft-body col-xs-12">
+                    <div class="d-flex js-between total-cart-mb">
+                        <a href="/cart"> Giỏ hàng:</a>
+                        <div class="text-right">
+                            <span class="price"></span>
+                            <div class="count">
+                                (<span class="cart-popup-count"></span>) sản phẩm
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-btn d-flex js-between">
+                        <a href="/cart" class="btn btn-cart">Xem giỏ hàng</a>
+                        <a href="/checkout" class="btn btn-checkout">Thanh toán</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="back-to-top" type="button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+            xml:space="preserve">
+            <g>
+                <polyline fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
+                    points="15,40 32,23 49,40 	" />
+            </g>
+        </svg>
+        back to top
+    </button>
+    <div class="modal-backdrop fade js-backdrop"></div>
+    <div class="suggest-notify anislideOutDown sales_animated"></div>
+    <!-- Đây là suggest sale popup -->
+    <div class="navigation-mobile visible-xs visible-sm">
+        <ul class="d-flex">
+            <li class="item">
+                <a class="d-flex item-link active" href="/">
+                    <span>
+                        <img class="first-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/home_027cdf38e9384ddb81f453ba516c2500.png"
+                            alt="Trang chủ" />
+                        <img class="after-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/home-active_7501f572b3324f58afa2f885c97b8701.png"
+                            alt="Trang chủ" />
+                    </span>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li class="item navigation-event">
+                <a class="d-flex" href="javascript:void(0)">
+                    <span>
+                        <img class="first-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/category_074fc86572ed4d389692f7bc5fb8d32f.png"
+                            alt="Danh mục" />
+                        <img class="after-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/category-active_3573358a277b44f0ae626afddf4633f0.png"
+                            alt="Danh mục" />
+                    </span>
+                    <span>Danh mục</span>
+                </a>
+            </li>
+            <li class="item">
+                <a class="d-flex item-link" href="/pages/he-thong-cua-hang">
+                    <span>
+                        <img class="first-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/location_7e8df8606c6647e9a0da6b893875d98e.png"
+                            alt="Cửa hàng" />
+                        <img class="after-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/location-acitve_71d06ddc84ea4e4c92843319f186ab63.png"
+                            alt="Cửa hàng" />
+                    </span>
+                    <span>Cửa hàng</span>
+                </a>
+            </li>
+            <li class="item">
+                <a class="d-flex item-link" href="tel:0967671065">
+                    <span>
+                        <img class="first-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/phone-call_f39d577fa5d249269096ffa4ae42aea3.png"
+                            alt="Hotline" />
+                        <img class="after-change" width="24" height="24"
+                            src="https://file.hstatic.net/200000713019/file/phone-call-active_eba163bb67564d139050bfd7ea6578c5.png"
+                            alt="Hotline" />
+                    </span>
+                    <span>Hotline</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="//theme.hstatic.net/200000713019/1001049223/14/pluginscript.js?v=1496" defer></script>
+    <script type="text/javascript" src="//theme.hstatic.net/200000713019/1001049223/14/main-scripts.js?v=1496" defer></script>
+    <script type="text/javascript" defer
+        src="//theme.hstatic.net/200000713019/1001049223/14/combo-app.js?v=1496"></script>
+    <script defer>
+        const asyncload = {
+            init: function () {
+                this.loadasyncdefer();
+            },
+            loadasyncdefer: () => {
+                try {
+                    !(function (a, c, d) {
+                        var b,
+                            e = a.getElementsByTagName(c)[0];
+                        a.getElementById(d) ||
+                            (((b = a.createElement(c)).id = d),
+                                (b.src =
+                                    "//connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.0"),
+                                e.parentNode.insertBefore(b, e));
+                    })(document, "script", "facebook-jssdk");
+                } catch (err) {
+                    console.log(err);
+                }
+            },
+        };
+        $(window).on("load", function () {
+            if (
+                navigator[_0x2c0xa[2]][_0x2c0xa[1]](_0x2c0xa[0]) == -1 &&
+                checklh == false
+            ) {
+                setTimeout(() => {
+                    asyncload.init();
+                }, 1500);
+            }
+        });
+    </script>
+</body>
+
+</html>
